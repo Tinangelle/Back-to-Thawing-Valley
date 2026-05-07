@@ -7,6 +7,7 @@ const dictionaries = {
       navFeatures: "Features",
       navGallery: "Gallery",
       navDevlog: "Dev Log",
+      navStudio: "Ignis Solaris Studio",
       eyebrow: "Indie Game",
       heroSubtitle: "Pixel-art management simulation / Community building / Role-playing / Adventure and conflict",
       ctaExplore: "Explore the Game",
@@ -51,6 +52,7 @@ const dictionaries = {
       previewDesc3: "Updated prototype UI layout for the school and hospital systems and clarified key interactions.",
       viewDetails: "View details",
       openDevlogPage: "Open full Dev Log blog page",
+      footerStudio: "Visit Our Studio",
       backToTop: "Back to top"
     },
     zh: {
@@ -60,6 +62,7 @@ const dictionaries = {
       navFeatures: "特色",
       navGallery: "画廊",
       navDevlog: "开发日志",
+      navStudio: "Ignis Solaris Studio",
       eyebrow: "独立游戏",
       heroSubtitle: "像素艺术风格模拟经营 / 社区建设 / 角色扮演 / 冒险冲突游戏",
       ctaExplore: "探索游戏",
@@ -104,6 +107,7 @@ const dictionaries = {
       previewDesc3: "更新了学校与医院系统的原型界面，并强化了关键交互表达。",
       viewDetails: "查看详情",
       openDevlogPage: "打开完整开发日志页面",
+      footerStudio: "访问工作室主页",
       backToTop: "返回顶部"
     },
     fr: {
@@ -113,6 +117,7 @@ const dictionaries = {
       navFeatures: "Fonctionnalites",
       navGallery: "Galerie",
       navDevlog: "Dev Log",
+      navStudio: "Ignis Solaris Studio",
       eyebrow: "Jeu inde",
       heroSubtitle: "Simulation de gestion pixel-art / Construction de communaute / Jeu de role / Aventure et conflit",
       ctaExplore: "Explorer le jeu",
@@ -157,6 +162,7 @@ const dictionaries = {
       previewDesc3: "Mise a jour de l'interface prototype pour l'ecole et l'hopital avec des interactions clarifiees.",
       viewDetails: "Voir les details",
       openDevlogPage: "Ouvrir la page complete du Dev Log",
+      footerStudio: "Visiter notre studio",
       backToTop: "Retour en haut"
     }
   },
