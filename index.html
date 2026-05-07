@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let the Whale Breach</title>
+  <meta name="description" content="Let the Whale Breach - A warm, healing, nature-inspired indie game adventure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <header class="hero" id="top">
+    <nav class="top-nav">
+      <a class="brand" href="#top">Let the Whale Breach</a>
+      <div class="nav-links" aria-label="Primary navigation">
+        <a href="#top" data-i18n="navHome">Home</a>
+        <a href="#features" data-i18n="navFeatures">Features</a>
+        <a href="#gallery" data-i18n="navGallery">Gallery</a>
+        <a href="devlog.html" data-i18n="navDevlog">Dev Log</a>
+      </div>
+      <div class="lang-switcher" aria-label="Language switcher">
+        <button class="lang-btn active" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+        <button class="lang-btn" type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+    </nav>
+
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow" data-i18n="eyebrow">Indie Game</p>
+      <h1>Let the Whale Breach</h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">Pixel-art management simulation / Community building / Role-playing / Adventure and conflict</p>
+      <a href="#features" class="cta-btn" data-i18n="ctaExplore">Explore the Game</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section core-intro" id="core-intro">
+      <div class="core-intro-grid">
+        <article class="core-intro-card">
+          <h3 data-i18n="introStoryTitle">Background Story</h3>
+          <p data-i18n="introStoryBody">
+            A century ago, a brutal war reduced this land to ruins. Its people were slaughtered or
+            scattered. Now, as the community's Delegate, you return with ambitious workers and
+            artisans who have grown tired of the kingdom's oppression. Together, you rebuild a home
+            from abandoned wreckage. Some NPCs are survivors from that era, or their descendants, and
+            their personal histories are tightly woven into the rebirth of the land.
+          </p>
+        </article>
+
+        <article class="core-intro-card">
+          <h3 data-i18n="introPlayerTitle">Player Role</h3>
+          <p data-i18n="introPlayerBody">
+            You play as the community's Delegate. You hold core decision-making power and determine how
+            resources are distributed and which public buildings are prioritized, directly shaping the
+            future of your new homeland.
+          </p>
+        </article>
+
+        <article class="core-intro-card">
+          <h3 data-i18n="introCoreTitle">Core Positioning</h3>
+          <p data-i18n="introCoreBody">
+            The game delivers a highly personalized, human-centered management simulation. Through close
+            collaboration with NPCs, it reduces repetitive chores common in the genre. At the same
+            time, it links community economic growth to resistance against the kingdom's tyranny, giving
+            every construction and production decision long-term narrative weight.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section features" id="features">
+      <div class="section-heading">
+        <h2 data-i18n="featuresHeading">Game Features</h2>
+        <p data-i18n="featuresSubheading">A deeply personal community-building journey shaped by your choices.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3 data-i18n="featureTitle1">Personalization & NPC Cooperation</h3>
+          <p data-i18n="featureDesc1">
+            NPCs respond to your preferences. If you enjoy farming but dislike mining, characters such
+            as Grandma or the blacksmith's daughter can voluntarily cover the tasks you avoid, so you
+            can focus on the activities you truly enjoy.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3 data-i18n="featureTitle2">Deep Economic Progression</h3>
+          <p data-i18n="featureDesc2">
+            Early on, the settlement relies on unstable "Kingdom Coins." Over time, you can establish
+            and lead a regional "New Community Currency" system. Economic expansion becomes a strategic
+            way to sanction the kingdom while advancing the larger story.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3 data-i18n="featureTitle3">Dual-Mode Fishing</h3>
+          <p data-i18n="featureDesc3">
+            "Calm Fishing" is a Pomodoro-style mode detached from in-game time, ideal for relaxed idle
+            sessions and unique anti-bragging easter-egg rewards. "Immersive Fishing" runs in first
+            person with in-game time flow: you can fish endlessly without fainting, but NPC efficiency
+            drops, creating meaningful strategic trade-offs.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3 data-i18n="featureTitle4">Dynamic NPC System</h3>
+          <p data-i18n="featureDesc4">
+            NPCs are not just labor units. They have individual proficiencies and relationships, learn
+            from one another, share experience with the player, and may even fall into conflicts that
+            you can step in to mediate.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3 data-i18n="featureTitle5">Character Growth & Safety Nets</h3>
+          <p data-i18n="featureDesc5">
+            Your Delegate grows through skill proficiency and hospital research that raises HP and
+            stamina caps. Carry weight limits are removed in favor of inventory slots, and robust
+            recovery systems such as buyback and insurance claims reduce frustration and keep setbacks
+            manageable.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3 data-i18n="featureTitle6">Strategic Community Construction</h3>
+          <p data-i18n="featureDesc6">
+            Every building choice matters, from restoring abandoned landmarks like schools, taverns, and
+            hospitals to creating core production sites such as blacksmiths and farms. The school is the
+            first project most NPCs unanimously support, highlighting the central role of knowledge.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <h3 data-i18n="featureTitle7">Unique Experience</h3>
+          <p data-i18n="featureDesc7">
+            Build deep emotional bonds with NPCs and feel the warmth of mutual support. Preserve history
+            by repairing ruins, collecting relics, and building a museum. Enjoy a cozy pace while still
+            facing meaningful management, strategy, and anti-kingdom challenges.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section-heading">
+        <h2 data-i18n="galleryHeading">Gallery</h2>
+        <p data-i18n="gallerySubheading">Moments from the journey. Replace placeholders with your future screenshots.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item" tabindex="0" role="button"><span data-i18n="galleryItem1">Screenshot placeholder 01</span></figure>
+        <figure class="gallery-item" tabindex="0" role="button"><span data-i18n="galleryItem2">Screenshot placeholder 02</span></figure>
+        <figure class="gallery-item" tabindex="0" role="button"><span data-i18n="galleryItem3">Screenshot placeholder 03</span></figure>
+        <figure class="gallery-item" tabindex="0" role="button"><span data-i18n="galleryItem4">Screenshot placeholder 04</span></figure>
+        <figure class="gallery-item" tabindex="0" role="button"><span data-i18n="galleryItem5">Screenshot placeholder 05</span></figure>
+        <figure class="gallery-item" tabindex="0" role="button"><span data-i18n="galleryItem6">Screenshot placeholder 06</span></figure>
+      </div>
+    </section>
+
+    <section class="section devlog" id="devlog">
+      <div class="section-heading">
+        <h2 data-i18n="devlogHeading">Development Log</h2>
+        <p data-i18n="devlogSubheading">Recent public notes from ongoing development. Scroll down and open the full entries.</p>
+      </div>
+
+      <div class="devlog-preview-list">
+        <article class="devlog-preview-card">
+          <p class="devlog-preview-date">2026-05-01</p>
+          <h3 data-i18n="previewTitle1">Settlement Onboarding Flow</h3>
+          <p data-i18n="previewDesc1">Refined early settlement onboarding and NPC helper prompts for smoother first-hour progression.</p>
+          <a href="devlog.html#post-2026-05-01" data-i18n="viewDetails">View details</a>
+        </article>
+
+        <article class="devlog-preview-card">
+          <p class="devlog-preview-date">2026-04-24</p>
+          <h3 data-i18n="previewTitle2">Immersive Fishing Balance Pass</h3>
+          <p data-i18n="previewDesc2">Rebalanced immersive fishing rewards and fatigue penalties to improve strategic trade-offs.</p>
+          <a href="devlog.html#post-2026-04-24" data-i18n="viewDetails">View details</a>
+        </article>
+
+        <article class="devlog-preview-card">
+          <p class="devlog-preview-date">2026-04-12</p>
+          <h3 data-i18n="previewTitle3">School & Hospital UI Prototype</h3>
+          <p data-i18n="previewDesc3">Updated prototype UI layout for the school and hospital systems and clarified key interactions.</p>
+          <a href="devlog.html#post-2026-04-12" data-i18n="viewDetails">View details</a>
+        </article>
+      </div>
+
+      <a class="devlog-more-link" href="devlog.html" data-i18n="openDevlogPage">Open full Dev Log blog page</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Let the Whale Breach. All rights reserved.</p>
+    <a href="#top" data-i18n="backToTop">Back to top</a>
+  </footer>
+  <div class="lightbox" id="gallery-lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close-lightbox="true"></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-labelledby="lightbox-caption">
+      <button class="lightbox-close" type="button" data-close-lightbox="true" data-i18n="closePreview">Close</button>
+      <img class="lightbox-image" alt="">
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

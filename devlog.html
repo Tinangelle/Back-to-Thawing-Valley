@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Log | Let the Whale Breach</title>
+  <meta name="description" content="Development blog and detailed updates for Let the Whale Breach.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="blog-body" data-page="devlog">
+  <nav class="top-nav blog-nav">
+    <a class="brand" href="index.html#top">Let the Whale Breach</a>
+    <div class="nav-links" aria-label="Primary navigation">
+      <a href="index.html#top" data-i18n="navHome">Home</a>
+      <a href="index.html#features" data-i18n="navFeatures">Features</a>
+      <a href="index.html#gallery" data-i18n="navGallery">Gallery</a>
+      <a href="devlog.html" data-i18n="navDevlog">Dev Log</a>
+    </div>
+    <div class="lang-switcher" aria-label="Language switcher">
+      <button class="lang-btn active" type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button class="lang-btn" type="button" data-lang="zh" aria-pressed="false">中文</button>
+      <button class="lang-btn" type="button" data-lang="fr" aria-pressed="false">FR</button>
+    </div>
+  </nav>
+
+  <main class="blog-main">
+    <header class="blog-header">
+      <h1 data-i18n="devlogPageTitle">Development Log</h1>
+      <p data-i18n="devlogPageIntro">Detailed notes from the production journey of Let the Whale Breach.</p>
+    </header>
+
+    <section class="blog-timeline-layout">
+      <aside class="blog-timeline">
+        <h2 data-i18n="timelineTitle">Timeline</h2>
+        <ul>
+          <li><a href="#post-2026-05-01">2026-05-01</a></li>
+          <li><a href="#post-2026-04-24">2026-04-24</a></li>
+          <li><a href="#post-2026-04-12">2026-04-12</a></li>
+          <li><a href="#post-2026-04-03">2026-04-03</a></li>
+        </ul>
+      </aside>
+
+      <div class="blog-list">
+        <article class="blog-post" id="post-2026-05-01">
+          <time datetime="2026-05-01">2026-05-01</time>
+          <h2 data-i18n="postTitle1">Settlement Onboarding Flow</h2>
+          <p data-i18n="postBody1">
+            We reworked the first-hour onboarding to reduce friction for new players. The helper prompt
+            system now better introduces farming, building priorities, and role assignment. NPC guidance
+            appears in a clearer sequence, so players can follow their preferred playstyle faster.
+          </p>
+        </article>
+
+        <article class="blog-post" id="post-2026-04-24">
+          <time datetime="2026-04-24">2026-04-24</time>
+          <h2 data-i18n="postTitle2">Immersive Fishing Balance Pass</h2>
+          <p data-i18n="postBody2">
+            Immersive fishing now has a more meaningful risk-reward profile. Reward values were tuned to
+            reflect time investment while fatigue penalties were adjusted to keep late-session decisions
+            strategic instead of punitive.
+          </p>
+        </article>
+
+        <article class="blog-post" id="post-2026-04-12">
+          <time datetime="2026-04-12">2026-04-12</time>
+          <h2 data-i18n="postTitle3">School & Hospital UI Prototype</h2>
+          <p data-i18n="postBody3">
+            We shipped a revised prototype for school and hospital management screens. The update clarifies
+            progression status, staffing logic, and upgrade affordances, making the long-term development
+            loop easier to understand at a glance.
+          </p>
+        </article>
+
+        <article class="blog-post" id="post-2026-04-03">
+          <time datetime="2026-04-03">2026-04-03</time>
+          <h2 data-i18n="postTitle4">Screenshot Pipeline Preparation</h2>
+          <p data-i18n="postBody4">
+            Internal capture workflow placeholders were added so future media updates can be published
+            faster. This groundwork keeps gallery updates consistent with milestone builds.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <a class="blog-back" href="index.html#devlog" data-i18n="backToPreview">Back to homepage Dev Log preview</a>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
