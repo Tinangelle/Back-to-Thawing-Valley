@@ -170,18 +170,19 @@ a {
 }
 
 .hero-subtitle {
-  margin: 1rem 0 1.5rem;
+  margin: 1.2rem 0 1.75rem;
   font-size: clamp(1rem, 2vw, 1.25rem);
   color: #41594d;
-  max-width: 52ch;
+  max-width: 58ch;
+  line-height: 1.65;
 }
 
 .subtitle-item,
 .subtitle-sep {
-  display: inline-block;
+  display: inline;
 }
 
-.subtitle-item {
+.subtitle-sep {
   white-space: nowrap;
 }
 
@@ -516,6 +517,17 @@ a {
 .blog-post time {
   color: var(--primary-deep);
   font-weight: 800;
+}
+
+/* Dev log multilingual blocks switch with <html lang="..."> (see script.js setLanguage). */
+.devlog-lang {
+  display: none;
+}
+
+html[lang="zh-CN"] .devlog-lang[data-devlog-lang="zh"],
+html[lang="en"] .devlog-lang[data-devlog-lang="en"],
+html[lang="fr"] .devlog-lang[data-devlog-lang="fr"] {
+  display: block;
 }
 
 .blog-post h2 {

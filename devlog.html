@@ -36,51 +36,722 @@
       <aside class="blog-timeline">
         <h2 data-i18n="timelineTitle">Timeline</h2>
         <ul>
-          <li><a href="#post-2026-05-01">2026-05-01</a></li>
-          <li><a href="#post-2026-04-24">2026-04-24</a></li>
-          <li><a href="#post-2026-04-12">2026-04-12</a></li>
-          <li><a href="#post-2026-04-03">2026-04-03</a></li>
+          <li><a href="#post-2025-09-17">2025-09</a></li>
+          <li><a href="#post-2025-08-31">2025-08</a></li>
         </ul>
       </aside>
 
       <div class="blog-list">
-        <article class="blog-post" id="post-2026-05-01">
-          <time datetime="2026-05-01">2026-05-01</time>
-          <h2 data-i18n="postTitle1">Settlement Onboarding Flow</h2>
-          <p data-i18n="postBody1">
-            We reworked the first-hour onboarding to reduce friction for new players. The helper prompt
-            system now better introduces farming, building priorities, and role assignment. NPC guidance
-            appears in a clearer sequence, so players can follow their preferred playstyle faster.
-          </p>
+        <article class="blog-post" id="post-2025-09-17">
+          <time datetime="2025-09-17">2025-09-17</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>Demo战略定型与开场方案确立</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>Demo战略</strong>：采用“序章 + 花絮”模式，主体为沉浸式开局，结尾附带Meta风格的“杀青梗”。</li>
+            <li><strong>动画方案</strong>：确定“精美定格插画 + 引擎动画”的混合模式，平衡艺术感与成本。</li>
+            <li><strong>引导哲学</strong>：推行“给予工具，然后放手”，实现即时满足与情感驱动的种地引导。</li>
+            <li><strong>工作流</strong>：确认“原型美术”工作流，先使用商用授权资源，后续再行替换。</li>
+          </ul>
+          <p><strong>备注：</strong> 正式启动《公开Demo开发计划 V1.0》。</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Demo strategy and opening approach locked in</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Demo structure:</strong> A &quot;prologue + extras&quot; format—an immersive opening as the main beat, closing with a meta-style &quot;wrap gag.&quot;</li>
+            <li><strong>Animation mix:</strong> Freeze-frame style art plus in-engine animation to balance craft and production cost.</li>
+            <li><strong>Onboarding philosophy:</strong> &quot;Give tools, then let go&quot;—immediate gratification plus emotion-led farming guidance.</li>
+            <li><strong>Pipeline:</strong> &quot;Prototype art&quot; workflow first, using licensed commercial assets with planned replacement later.</li>
+          </ul>
+          <p><strong>Note:</strong> Kick-off of the <em>Public Demo Development Plan v1.0</em>.</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Stratégie du démo et proposition d’ouverture validées</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Structure du démo :</strong> mode « prologue + bonus » — ouverture immersive au centre, puis clin d’œil meta façon « générique de fin ».</li>
+            <li><strong>Animation :</strong> combinaison illustrations figées soignées et animation moteur pour équilibre esthétique et coût.</li>
+            <li><strong>Guidage :</strong> philosophie « donner les outils, puis lâcher prise » — satisfaction immédiate et tutorat des cultures porté par l’émotion.</li>
+            <li><strong>Workflow :</strong> flux « art prototype » avec ressources sous licence en premier, remplacement envisagé ensuite.</li>
+          </ul>
+          <p><strong>Remarque : </strong> lancement officiel du <em>plan de développement du démo public v1.0</em>.</p>
+          </div>
         </article>
 
-        <article class="blog-post" id="post-2026-04-24">
-          <time datetime="2026-04-24">2026-04-24</time>
-          <h2 data-i18n="postTitle2">Immersive Fishing Balance Pass</h2>
-          <p data-i18n="postBody2">
-            Immersive fishing now has a more meaningful risk-reward profile. Reward values were tuned to
-            reflect time investment while fatigue penalties were adjusted to keep late-session decisions
-            strategic instead of punitive.
-          </p>
+        <article class="blog-post" id="post-2025-09-16">
+          <time datetime="2025-09-16">2025-09-16</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>钓鱼系统核心玩法与驱动模型</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>玩法定型</strong>：确立“听声辨位、单键反应”模式（灵感来自《动森》），支持闭眼游玩。</li>
+            <li><strong>奖励机制</strong>：引入“斯金纳箱”理论，设计 D-S 级 Loot Table 及保底机制 (Pity Timer)。</li>
+            <li><strong>特色系统</strong>：录入沉浸式通宵钓鱼、失物招领、举鱼游街及钓鱼日志等机制。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>《钓鱼系统游戏设计文档 V1.0》</li>
+          </ul>
+          <p><strong>备注：</strong> 下一步需实现听觉循环原型及 Loot Table 数据结构。</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Fishing core loop and reward drivers</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Loop:</strong> &quot;Listen, aim, single-button react&quot; (inspired by <em>Animal Crossing</em>)—playable eyes-free.</li>
+            <li><strong>Rewards:</strong> Skinner-box framing with a D–S loot table and pity-timer safeguards.</li>
+            <li><strong>Features drafted:</strong> Overnight immersive fishing, lost-and-found fish, parade carries, fishing journal hooks.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li><em>Fishing Systems GDD v1.0</em></li>
+          </ul>
+          <p><strong>Note:</strong> Next—audio loop prototype plus loot-table data structures.</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Boucle principale et modèle récompenses de la pêche</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Boucle :</strong> « entendre, viser, une touche » (inspiré d’<em>Animal Crossing</em>) — jouable sans regarder l’écran.</li>
+            <li><strong>Récompenses :</strong> cadre type Skinner avec table de butin rang D–S et timer de pity.</li>
+            <li><strong>Systèmes :</strong> pêche immersive de nuit, poissons trouvailles, présentation en défilé, carnet de pêche esquissés.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li><em>GDD système pêche v1.0</em></li>
+          </ul>
+          <p><strong>Remarque : </strong> ensuite — prototype de boucle audio et structures données pour tables de loot.</p>
+          </div>
         </article>
 
-        <article class="blog-post" id="post-2026-04-12">
-          <time datetime="2026-04-12">2026-04-12</time>
-          <h2 data-i18n="postTitle3">School & Hospital UI Prototype</h2>
-          <p data-i18n="postBody3">
-            We shipped a revised prototype for school and hospital management screens. The update clarifies
-            progression status, staffing logic, and upgrade affordances, making the long-term development
-            loop easier to understand at a glance.
-          </p>
+        <article class="blog-post" id="post-2025-09-15">
+          <time datetime="2025-09-15">2025-09-15</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>核心设计哲学与风险评估</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>哲学基调</strong>：确立“心理避难所”地位，强调 NPC 无条件关怀，避免功利性。</li>
+            <li><strong>NPC 机制</strong>：NPC 模式定义为世界的“基础自动运转模式”，玩家是社区发展的“催化剂”。</li>
+            <li><strong>叙事方向</strong>：定性为“感情流”驱动，宏大背景采用“轻拿轻放”的碎片化叙事。</li>
+            <li><strong>高风险处理</strong>：放弃内置现实书籍，放弃复杂动态模拟系统，AI 接入转向独立的实验分支计划。</li>
+          </ul>
+          <p><strong>备注：</strong> 集中精力打造纯手工、高质量的 MVP 核心体验。</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Core design pillars and risk triage</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Tone:</strong> Position the game as a &quot;psychological refuge&quot;—NPC care without transactional grind frames.</li>
+            <li><strong>NPC paradigm:</strong> NPCs embody the world&#x27;s baseline rhythms; the player catalyzes community growth.</li>
+            <li><strong>Story:</strong> Emotion-forward beats with &quot;light-touch&quot; fragmentation for lore-scale backdrops.</li>
+            <li><strong>Risks cut:</strong> Drop embedded real-world books and heavy systemic simulation; sandbox AI experiments move to an isolated branch.</li>
+          </ul>
+          <p><strong>Note:</strong> Focus resources on handcrafted, premium MVP pillars.</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Philosophie centrale et évaluation des risques</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Ton :</strong> « refuge psychologique » — attention des PNJ sans logique trop utilitaire du joueur.</li>
+            <li><strong>PNJ :</strong> rythmes de monde autonomes ; le joueur agit comme catalyseur du village.</li>
+            <li><strong>Narratif :</strong> moteurs émotionnels, lore vaste distillé par touches légères.</li>
+            <li><strong>Risques évité :</strong> pas de livres réels embarqués ni simulation systémique trop lourde ; l’IA expérimentale sur branche séparée.</li>
+          </ul>
+          <p><strong>Remarque : </strong> concentrer l’équipe sur un MVP artisanal et de haute qualité.</p>
+          </div>
         </article>
 
-        <article class="blog-post" id="post-2026-04-03">
-          <time datetime="2026-04-03">2026-04-03</time>
-          <h2 data-i18n="postTitle4">Screenshot Pipeline Preparation</h2>
-          <p data-i18n="postBody4">
-            Internal capture workflow placeholders were added so future media updates can be published
-            faster. This groundwork keeps gallery updates consistent with milestone builds.
-          </p>
+        <article class="blog-post" id="post-2025-09-13">
+          <time datetime="2025-09-13">2025-09-13</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>核心 NPC（爷爷与奶奶）深度塑造</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>爷爷 (Grandpa)</strong>：身份定为“奇怪的拾荒者”，核心创伤为幸存者内疚，通过“弱链接误导 -&gt; 强链接揭示”登场。</li>
+            <li><strong>奶奶 (Grandma)</strong>：身份定为“故事讲述者”，代表“创伤后成长”，通过听故事解锁隐藏游戏机制。</li>
+          </ul>
+          <p><strong>备注：</strong> 确立了爷爷重新拿起鱼竿作为自我和解的象征。</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Core NPC archetypes—grandfather and grandmother</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Grandfather:</strong> Oddball scavenger; survivor guilt anchors him via &quot;weak misleading ties leading to resilient reveals.&quot;</li>
+            <li><strong>Grandmother:</strong> Story keeper standing for post-traumatic growth; hearing tales unlocks hidden mechanics.</li>
+          </ul>
+          <p><strong>Note:</strong> Fishing rod returned as emblem of reconciliation for Grandfather.</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>PNJ centraux — grand-père et grand-mère</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Grand-père :</strong> chiffonnier décalé ; culpabilité du survivant via fausses pistes puis révélation forte du lien réel.</li>
+            <li><strong>Grand-mère :</strong> conteuse incarne la résilience ; écouter ses récits débloque des mécaniques cachées.</li>
+          </ul>
+          <p><strong>Remarque : </strong> le grand-père reprend la pêche comme symbole de réconciliation intérieure.</p>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-09-04">
+          <time datetime="2025-09-04">2025-09-04</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>玩家组件重构与高级拾取系统</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>架构重构</strong>：将工具管理与交互逻辑从 player.gd 剥离至 Hand.gd。</li>
+            <li><strong>拾取系统</strong>：实现自动拾取（资源类）与手动拾取（作物类）双模式。</li>
+            <li><strong>调试工具</strong>：创建 GM 命令（Z 键）实现时间暂停/继续。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>player.gd, Hand.gd, InventoryManager.gd, WoodPickup.gd</li>
+          </ul>
+          <p><strong>备注：</strong> 后续将进行地图“灰盒”搭建及镜头缩放功能开发。</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Player refactor and advanced pickups</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Architecture:</strong> Tool orchestration/interaction peeled from player.gd into Hand.gd.</li>
+            <li><strong>Pickups:</strong> Auto collect for resources versus manual gathers for crops.</li>
+            <li><strong>Debug:</strong> GM shortcut (Z) toggles time pause/play.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li>player.gd, Hand.gd, InventoryManager.gd, WoodPickup.gd</li>
+          </ul>
+          <p><strong>Note:</strong> Up next—greybox mapping pass plus camera zoom tooling.</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Refactor joueur et ramassages avancés</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Architecture :</strong> outils et interactions extraits de `player.gd` vers `Hand.gd`.</li>
+            <li><strong>Ramassage :</strong> auto pour ressources, manuel pour cultures.</li>
+            <li><strong>Debug :</strong> raccourci MJ (touche Z) pour pause / reprise du temps.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li>player.gd, Hand.gd, InventoryManager.gd, WoodPickup.gd</li>
+          </ul>
+          <p><strong>Remarque : </strong> puis greyboxing de carte et fonction zoom caméra.</p>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-09-03">
+          <time datetime="2025-09-03">2025-09-03</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>后期动机困境与“克拉克森农场”模型</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>叙事理论</strong>：提出“攀登者的回望”，利用马斯洛需求层次引导后期目标转向社区贡献。</li>
+            <li><strong>终局方案</strong>：引入规则迥异的新环境，玩家角色从“实干家”转变为“投资人”。</li>
+            <li><strong>高级机制</strong>：构思“石匠的苏醒”（系统解锁包装）与“轮回者的馈赠”（二周目叙事化）。</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Late-game motivation and a &quot;Clarkson&#x27;s Farm&quot;-style pivot</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Story theory:</strong> Climber&#x27;s hindsight—Maslow scaffolding nudges endgame goals toward community contribution.</li>
+            <li><strong>Late arc:</strong> Alternate ruleset biome where the Delegate shifts builder-operator to steward-investor.</li>
+            <li><strong>High-tier hooks:</strong> Stonemason awakening (fiction for system gates) plus cycle-gifter beats for NG+ narration.</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Motivation fin de jeu et modèle façon Clarkson</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Narratif :</strong> regard du grimpeur — pyramide de Maslow pour orienter les objectifs tardifs vers la communauté.</li>
+            <li><strong>Fin de boucle :</strong> nouveau cadre avec règles différentes ; passage de « généraliste terrain » à « investisseur stratège ».</li>
+            <li><strong>Hooks :</strong> éveil du tailleur de pierre (habillage des déverrouillages), don du cycliste pour une narration new game plus.</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-09-02">
+          <time datetime="2025-09-02">2025-09-02</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>核心循环闭合与交互标准化</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>核心循环</strong>：实现出货箱 (ShippingBin) 与日结算面板 (EndOfDayReport)。</li>
+            <li><strong>UI 架构</strong>：升级 UIManager 为全局单例，与场景 HUD 解耦。</li>
+            <li><strong>接口规范</strong>：统一所有被交互对象的函数签名。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>ShippingBin.gd, ui_manager.tscn, EndOfDayReport.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Core loop closure &amp; interaction normalization</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Economy beats:</strong> Shipping bin plus end-of-day report UI.</li>
+            <li><strong>UI layer:</strong> Promoted UIManager singleton decouples scene HUDs.</li>
+            <li><strong>Contracts:</strong> Standard hit/interact signatures everywhere.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li>ShippingBin.gd, ui_manager.tscn, EndOfDayReport.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Boucle principale fermée et interactions normalisées</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Boucle :</strong> bac d’expédition et tableau de bilan journalier (`EndOfDayReport`).</li>
+            <li><strong>UI :</strong> `UIManager` en singleton découple les HUD par scène.</li>
+            <li><strong>Interfaces :</strong> signature unique pour tous les interactables.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li>ShippingBin.gd, ui_manager.tscn, EndOfDayReport.gd</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-09-01">
+          <time datetime="2025-09-01">2025-09-01</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>项目架构重构与全局事件系统</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>功能拆分</strong>：将 FarmManager.gd 拆解为职责明确的 FarmingManager.gd。</li>
+            <li><strong>事件总线</strong>：建立基于信号的 UIManager 全局 UI 事件系统。</li>
+            <li><strong>场景树升级</strong>：优化 Main -&gt; World + UI 的顶层结构，启用 Y-Sort。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>FarmingManager.gd, UIManager.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Project architecture split &amp; UI event backbone</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Splits:</strong> FarmManager becomes focused FarmingManager.</li>
+            <li><strong>Events:</strong> Signal-driven global UI broadcasting via UIManager.</li>
+            <li><strong>Scene graph:</strong> Cleaner Main branch into World versus UI overlays with Y-sort.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li>FarmingManager.gd, UIManager.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Refonte architecture et bus d’événements UI</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Découpe :</strong> `FarmManager.gd` scindé en `FarmingManager.gd`.</li>
+            <li><strong>Bus :</strong> signaux pour les évènements globaux traités dans `UIManager`.</li>
+            <li><strong>Scène :</strong> structure Main → monde + couches UI ; tri Y-sort actif.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li>FarmingManager.gd, UIManager.gd</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-31">
+          <time datetime="2025-08-31">2025-08-31</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>系统架构搭建与第一个 Gameplay Loop</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>单例模式</strong>：创建 SeasonManager（中央时钟）与 PlayerStats（数据中心）。</li>
+            <li><strong>交互模型</strong>：利用 RayCast2D 建立通用的 hit(tool) 交互接口。</li>
+            <li><strong>资源反馈</strong>：实现带磁力吸附效果的掉落物。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>SeasonManager.gd, PlayerStats.gd, Tree.tscn, WoodPickup.tscn</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Architecture bootstrap and first gameplay loop</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Singleton services:</strong> SeasonManager time hub plus PlayerStats data hub.</li>
+            <li><strong>Interactions:</strong> Universal RayCast2D `hit(tool)` pattern.</li>
+            <li><strong>Loot feel:</strong> Drops with magnetic ease-in feedback.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li>SeasonManager.gd, PlayerStats.gd, Tree.tscn, WoodPickup.tscn</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Pose de l’architecture et première boucle de jeu</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Singletons :</strong> `SeasonManager` (horloge) et `PlayerStats` (centralisation des stats joueur).</li>
+            <li><strong>Gameplay :</strong> `RayCast2D` pour interface générique `hit(tool)`.</li>
+            <li><strong>Récompenses visuelles :</strong> drops avec aimantations courtes au ramassage.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li>SeasonManager.gd, PlayerStats.gd, Tree.tscn, WoodPickup.tscn</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-30">
+          <time datetime="2025-08-30">2025-08-30</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>地图瓦片替换与四季变换功能</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>资源更新</strong>：创建全新 TileSet 资源并完成导入设置。</li>
+            <li><strong>季节动态</strong>：通过 change_season 函数动态切换 TileMapLayer 的 tile_set。</li>
+          </ul>
+          <p><strong>备注：</strong> 修复了检查器未分配资源及函数名拼写错误。</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Tile refresh and seasonal map swaps</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Assets:</strong> Built fresh TileSets with clean import presets.</li>
+            <li><strong>Seasons:</strong> `change_season()` hot-swaps TileMapLayer tile_sets at runtime.</li>
+          </ul>
+          <p><strong>Note:</strong> Fixed inspector dangling resources and typoed function identifiers.</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Tuiles carte et métamorphoses saisonnières</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Assets :</strong> nouveau TileSet configuré jusqu’aux réglages d’importation.</li>
+            <li><strong>Saisons :</strong> fonction `change_season()` commute `tile_set` des `TileMapLayer`.</li>
+          </ul>
+          <p><strong>Remarque : </strong> correctifs inspections (ressources manquantes et noms de fonctions incorrects).</p>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-28">
+          <time datetime="2025-08-28">2025-08-28</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>渲染技术研讨与 AI 控制</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>视觉风格</strong>：探讨伪 3D 轴测投影技术在 Godot 中的实现。</li>
+            <li><strong>成本控制</strong>：决定将 AI 交互局限在特定区域（Area2D），以控制 API 调用成本。</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Rendering research and gated AI interplay</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Look:</strong> Prototyping pseudo-isometric layering inside Godot.</li>
+            <li><strong>Cost control:</strong> Anchor AI chatter to scripted Area2D pockets to conserve API budgets.</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Étude rendu et contrôle de l’IA</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Style :</strong> expérimenter une fausse 3D isométrique via Godot.</li>
+            <li><strong>Coûts :</strong> interactions IA cloisonnées par zones Area2D pour limiter les appels externes.</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-27">
+          <time datetime="2025-08-27">2025-08-27</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>任务系统闭环与 UI 稳定性重构</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>数据驱动</strong>：任务系统升级为以 ID 为键的字典结构，实现 UI-数据解耦。</li>
+            <li><strong>坐标校准</strong>：通过三步翻译流程修复 TileMap 交互偏移。</li>
+            <li><strong>UI 调试</strong>：利用“远程”场景树修复了 ScrollContainer 布局难题。</li>
+          </ul>
+          <p><strong>备注：</strong> 解决了任务列表文字不换行及尺寸计算错误。</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Quest data closure plus UI stabilization</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>IDs:</strong> Tasks map by dictionary keys separating UI clones from authoring data.</li>
+            <li><strong>Coords:</strong> Triple translation pass fixes TileMap aim offsets when selecting tiles.</li>
+            <li><strong>UI debug:</strong> Remote scene tree helped tame ScrollContainers.</li>
+          </ul>
+          <p><strong>Note:</strong> Wrapped text + layout measurement bugs cleared for quest roster.</p>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Quêtes data-driven et refonte fiabilité UI</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Données :</strong> registre de quêtes par ID découpé de l’UI.</li>
+            <li><strong>Coords :</strong> décalages TileMap corrigés par pipeline de trois translations.</li>
+            <li><strong>Debug UI :</strong> arbre distant pour débloquer `ScrollContainer`.</li>
+          </ul>
+          <p><strong>Remarque : </strong> retours à la ligne texte mesures corrigées sur la liste de quêtes.</p>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-26">
+          <time datetime="2025-08-26">2025-08-26</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>万能手账 UI 重构与脚本清理</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>职责剥离</strong>：UI 更新逻辑从 World 移至 Notebook.gd。</li>
+            <li><strong>对话修复</strong>：解决了因缺少 &quot;start&quot; 标题导致的对话框无法显示问题。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>Notebook.gd, World.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Journal UI refactor</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Ownership:</strong> Notebook.gd absorbs UI syncing that lived on World before.</li>
+            <li><strong>Dialog:</strong> Restored Dialogue Manager passages missing the `start` title.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li>Notebook.gd, World.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Refonte carnet tout-en-un et nettoyage scripts</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Séparation :</strong> logique UI déplacée de `World` vers `Notebook.gd`.</li>
+            <li><strong>Dialogue :</strong> correctif des scènes sans titre `start`.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li>Notebook.gd, World.gd</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-25">
+          <time datetime="2025-08-25">2025-08-25</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>动态手账系统与像素艺术配置</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>多标签设计</strong>：基于 TabContainer 实现 Task 与 Social 页面。</li>
+            <li><strong>动态填充</strong>：实现根据 WorldState 动态生成 TaskItem 实例。</li>
+            <li><strong>视觉优化</strong>：配置项目为 CanvasItems 拉伸模式，确保像素清晰。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>Notebook.tscn, TaskItem.tscn, WorldState.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Dynamic journal notebooks + crisp pixel prefs</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Tabs:</strong> TabContainer juggling Task versus Social canvases.</li>
+            <li><strong>Hydration:</strong> Spawns TaskItem clones from runtime WorldState.</li>
+            <li><strong>Rendering:</strong> CanvasItems stretch presets protecting pixel fidelity.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li>Notebook.tscn, TaskItem.tscn, WorldState.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Agenda dynamique et config pixel-perfect</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Onglets :</strong> TabContainer séparant tâches et social.</li>
+            <li><strong>Contenu vivant :</strong> instanciations `TaskItem` pilotées par `WorldState`.</li>
+            <li><strong>Pixels :</strong> mode d’étirement CanvasItems pour garder une image nette.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li>Notebook.tscn, TaskItem.tscn, WorldState.gd</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-24">
+          <time datetime="2025-08-24">2025-08-24</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>NPC 架构模板化与剧情衔接</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>通用大脑</strong>：创建 NPC_Base 作为所有角色的逻辑基座。</li>
+            <li><strong>序章实现</strong>：通过代码实例化女巫角色，利用信号实现无缝剧情。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>NPC_Base.gd, Witch.gd, World.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>NPC template spine and scripted prologue stitches</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Base class:</strong> NPC_Base houses shared brain logic across cast.</li>
+            <li><strong>Prologue beat:</strong> Scripted witch spawn + signal bridges for seamless vignettes.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li>NPC_Base.gd, Witch.gd, World.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Patron NPC et mise en orbite narratives</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Socle commun :</strong> `NPC_Base.gd` porte les comportements génériques du casting.</li>
+            <li><strong>Prologue :</strong> sorcière spawnée depuis le code reliée aux signaux narration.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li>NPC_Base.gd, Witch.gd, World.gd</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-23">
+          <time datetime="2025-08-23">2025-08-23</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>对话系统升级与农场 MVP 实装</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>插件接入</strong>：采用 &quot;Dialogue Manager&quot; 插件，实现数据与内容分离。</li>
+            <li><strong>玩法闭环</strong>：完成“开垦-播种-生长-收获”的完整农场循环。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>DialogueManager, WorldState.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Dialogue Manager integration and farming MVP shipped</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Tooling:</strong> Dialogue Manager cleanly splits copy from logic.</li>
+            <li><strong>Loop MVP:</strong> Till, plant, grow, harvest—full slice live.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li>Dialogue Manager plugin assets, WorldState.gd</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Dialogue Manager et boucle ferme MVP</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Outils :</strong> plugin Dialogue Manager — données narration séparées du code.</li>
+            <li><strong>Boucle :</strong> labour, semis, croissance, récolte totalisés.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li>Dialogue Manager, WorldState.gd</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-22">
+          <time datetime="2025-08-22">2025-08-22</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>季节性节日构思与伦理系统</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>节日设计</strong>：构思了依偎之夜（春）、湖上花火节（夏）、流浪者之夜（秋）。</li>
+            <li><strong>养殖伦理</strong>：引入“命名契约”与“情感投资”机制，确立人道底线。</li>
+            <li><strong>社交锁</strong>：引入深度对话解锁好感度进阶，拒绝无限送礼模式。</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Seasonal festivals drafted plus husbandry ethics</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Events:</strong> Tender Night spring, lakeside fireworks summer, Voyager Night autumn.</li>
+            <li><strong>Livestock ethos:</strong> Naming pacts plus emotional stewardship ground humane guardrails.</li>
+            <li><strong>Relationships:</strong> Friendship tiers unlocked through meaningful dialogue—not endless gifting bots.</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Festivals saisonniers et éthique d’élevage</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Festivals :</strong> Nuit enlacée (printemps), feux lacustres (été), Nuit des voyageurs (automne).</li>
+            <li><strong>Élevage :</strong> pactes des noms investissement sentimental pour bornes bienveillantes.</li>
+            <li><strong>Amitiés :</strong> étapes après dialogues riches — pas d’excès de loot cadeaux.</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-21">
+          <time datetime="2025-08-21">2025-08-21</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>动画系统升级与纸娃娃结构</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>换装支持</strong>：重构动画为分层的 Body 与 Outfit 结构。</li>
+            <li><strong>NPC 交互</strong>：实现第一个完整 NPC（奶奶）的互动感应与对话请求。</li>
+          </ul>
+          <p><strong>相关文件：</strong></p>
+          <ul>
+            <li>Grandma.tscn, AnimatedSprite2D</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Animation stack uplift and paper doll layers</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Dressing pipeline:</strong> Animated bodies split outfit slots for mix-and-match.</li>
+            <li><strong>NPC beat:</strong> Grandma gets first holistic interact + greeting dialogue probes.</li>
+          </ul>
+          <p><strong>Related files:</strong></p>
+          <ul>
+            <li>Grandma.tscn, AnimatedSprite2D setups</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Animations couches et première interaction PNJ</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Couches corps / tenues :</strong> refactoring pour combinaisons façon pantin.</li>
+            <li><strong>PNJ clé :</strong> grand-mère – premier jeu complet boucle perception + proposition de dialogue.</li>
+          </ul>
+          <p><strong>Fichiers : </strong></p>
+          <ul>
+            <li>Grandma.tscn, AnimatedSprite2D</li>
+          </ul>
+          </div>
+        </article>
+
+        <article class="blog-post" id="post-2025-08-20">
+          <time datetime="2025-08-20">2025-08-20</time>
+          <div class="devlog-lang" data-devlog-lang="zh">
+          <h2>核心交互原型建立</h2>
+          <p><strong>内容：</strong></p>
+          <ul>
+            <li><strong>系统整合</strong>：实现“对话 -&gt; 选择 -&gt; 反馈 -&gt; 自由移动”的完整体验。</li>
+            <li><strong>基础资产</strong>：初步建立 TileMap 农田和 Player 移动物理系统。</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="en">
+          <h2>Core interaction sandbox established</h2>
+          <p><strong>Content:</strong></p>
+          <ul>
+            <li><strong>Flow:</strong> Dialogue, branch choice, feedback, roam—full micro vertical slice wired.</li>
+            <li><strong>World scaffolding:</strong> Starter farm TileMap terrain plus kinematic-ish player motion.</li>
+          </ul>
+          </div>
+          <div class="devlog-lang" data-devlog-lang="fr">
+          <h2>Proto des interactions centraux</h2>
+          <p><strong>Contenu : </strong></p>
+          <ul>
+            <li><strong>Flux :</strong> dialogue choix branches retours exploration libre assemblée.</li>
+            <li><strong>Contenu monde :</strong> TileMap fermière initiale mouvement physique du joueur.</li>
+          </ul>
+          </div>
         </article>
       </div>
     </section>

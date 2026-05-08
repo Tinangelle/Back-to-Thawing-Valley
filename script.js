@@ -9,7 +9,7 @@ const dictionaries = {
       navDevlog: "Dev Log",
       navStudio: "Ignis Solaris Studio",
       eyebrow: "Indie Game",
-      heroSubtitle: "Pixel-art management simulation / Community building / Role-playing / Adventure and conflict",
+      heroSubtitle: "Pixel-art management simulation / Community building / Role‑playing / Adventure and conflict",
       ctaExplore: "Explore the Game",
       introStoryTitle: "Background Story",
       introStoryBody: "A century ago, a brutal war reduced this land to ruins. Its people were slaughtered or scattered. Now, as the community's Delegate, you return with ambitious workers and artisans who have grown tired of the kingdom's oppression. Together, you rebuild a home from abandoned wreckage. Some NPCs are survivors from that era, or their descendants, and their personal histories are tightly woven into the rebirth of the land.",
@@ -261,6 +261,43 @@ function syncLanguageToUrl(lang) {
   window.history.replaceState(null, "", url.toString());
 }
 
+function lockHeroSubtitleCompoundHyphens(text) {
+  return text.replace(/Role(?:[-\u2011])playing/gi, "Role\u2011playing");
+}
+
+function applyHeroSubtitleLayout() {
+  const subtitle = document.querySelector(".hero-subtitle");
+  if (!subtitle) {
+    return;
+  }
+
+  const rawText = lockHeroSubtitleCompoundHyphens(subtitle.textContent || "");
+  const parts = rawText
+    .split("/")
+    .map((part) => part.trim())
+    .filter(Boolean);
+
+  if (parts.length <= 1) {
+    subtitle.textContent = rawText;
+    return;
+  }
+
+  subtitle.textContent = "";
+  parts.forEach((part, index) => {
+    const item = document.createElement("span");
+    item.className = "subtitle-item";
+    item.textContent = part;
+    subtitle.appendChild(item);
+
+    if (index < parts.length - 1) {
+      const sep = document.createElement("span");
+      sep.className = "subtitle-sep";
+      sep.textContent = " / ";
+      subtitle.appendChild(sep);
+    }
+  });
+}
+
 function setLanguage(page, lang, options = {}) {
   const { persist = true, syncUrl = true } = options;
   const table = dictionaries[page] && dictionaries[page][lang];
@@ -284,6 +321,8 @@ function setLanguage(page, lang, options = {}) {
       node.textContent = table[key];
     }
   });
+
+  applyHeroSubtitleLayout();
 
   const buttons = document.querySelectorAll(".lang-btn");
   buttons.forEach((button) => {
