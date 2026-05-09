@@ -42,33 +42,6 @@ development updates:
 - `style.css` — Shared styles for both pages.
 - `script.js` — Multi-language switching (EN / 中文 / FR) and shared UI logic.
 
-### Run Locally
-
-It is a plain static site, so any local server works. For example:
-
-```bash
-# Python 3
-python -m http.server 8000
-```
-
-Then open <http://localhost:8000/> in your browser.
-
-### Update Dev Log From Markdown
-
-The full Dev Log page can be generated from `devlog-source.md`.
-
-Log entries default to Chinese. After each dated block, optional `@en` / `@fr` sections hold English and French with the same structure (`Title:` / `Titre :`, `Content`, `Related files` / `Fichiers`, `Note` / `Remarque`). The site switches language via the navbar; those blocks use `html[lang="..."]` in CSS together with `<div class="devlog-lang">`.
-
-1. Edit `devlog-source.md` only.
-2. Run:
-
-```bash
-python tools/update_devlog.py
-```
-
-This command updates both `devlog.html` (timeline + full entries) and `index.html` (homepage devlog preview cards).
-
-## Roadmap
 
 1. **Launch the "Prologue" Demo** — Complete and publicly release a 15–20 minute
    "Prologue" demo for *Let the Whale Breach* on Steam and itch.io to showcase
