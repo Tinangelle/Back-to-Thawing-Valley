@@ -37,6 +37,7 @@ a {
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100dvh;
   padding: 1.2rem clamp(1rem, 3vw, 2.4rem) 2rem;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -44,21 +45,47 @@ a {
   overflow: hidden;
 }
 
+.hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-color: #f7fcf9;
+  background-image: url("assets/spring_hero.png");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.06);
+  transform-origin: center;
+  filter: brightness(1.38) saturate(0.74);
+  -webkit-mask-image: radial-gradient(
+    ellipse 105% 95% at 50% 44%,
+    #000 22%,
+    rgba(0, 0, 0, 0.72) 52%,
+    transparent 88%
+  );
+  mask-image: radial-gradient(
+    ellipse 105% 95% at 50% 44%,
+    #000 22%,
+    rgba(0, 0, 0, 0.72) 52%,
+    transparent 88%
+  );
+}
+
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 15% 20%, rgba(142, 210, 223, 0.32), transparent 40%),
-    radial-gradient(circle at 85% 85%, rgba(122, 191, 155, 0.28), transparent 38%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.12));
-  z-index: 0;
+    radial-gradient(circle at 15% 20%, rgba(142, 210, 223, 0.1), transparent 42%),
+    radial-gradient(circle at 85% 85%, rgba(122, 191, 155, 0.18), transparent 40%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.07));
+  z-index: 1;
 }
 
 .top-nav,
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .top-nav {
@@ -141,8 +168,20 @@ a {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, rgba(250, 255, 252, 0.87) 0%, rgba(250, 255, 252, 0.45) 50%, rgba(250, 255, 252, 0.18) 100%);
-  z-index: 1;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 56%,
+      rgba(246, 251, 245, 0.55) 78%,
+      var(--bg) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(249, 251, 250, 0.02),
+      rgba(249, 251, 250, 0.02)
+    );
+  z-index: 2;
 }
 
 .hero-content {
@@ -163,23 +202,69 @@ a {
   font-size: 0.8rem;
 }
 
+.hero .eyebrow {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(122, 191, 155, 0.42);
+  color: #2d6a4d;
+  text-shadow:
+    0 0 6px rgba(252, 253, 252, 0.98),
+    0 0 14px rgba(248, 252, 249, 0.88),
+    0 0 24px rgba(248, 252, 249, 0.62),
+    0 1px 0 rgba(255, 255, 255, 0.82),
+    0 1px 3px rgba(38, 52, 44, 0.14);
+}
+
 .hero h1 {
   margin: 0;
   font-size: clamp(2rem, 6vw, 4rem);
   line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #15251c;
+  text-shadow:
+    0 0 12px rgba(252, 253, 252, 0.98),
+    0 0 28px rgba(248, 252, 249, 0.92),
+    0 0 52px rgba(248, 252, 249, 0.68),
+    0 2px 0 rgba(255, 255, 255, 0.85),
+    0 2px 10px rgba(38, 52, 44, 0.18),
+    0 3px 14px rgba(38, 52, 44, 0.1);
 }
 
-.hero-subtitle {
+.hero .hero-subtitle {
   margin: 1.2rem 0 1.75rem;
   font-size: clamp(1rem, 2vw, 1.25rem);
-  color: #41594d;
+  color: #2a3d34;
+  font-weight: 600;
   max-width: 58ch;
   line-height: 1.65;
+  text-shadow:
+    0 0 6px rgba(252, 253, 252, 0.97),
+    0 0 16px rgba(248, 252, 249, 0.85),
+    0 0 30px rgba(248, 252, 249, 0.58),
+    0 1px 0 rgba(255, 255, 255, 0.75),
+    0 1px 4px rgba(38, 52, 44, 0.16);
 }
 
 .subtitle-item,
 .subtitle-sep {
   display: inline;
+}
+
+.hero .cta-btn {
+  color: #071912;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.42),
+    0 0 18px rgba(252, 253, 252, 0.92),
+    0 0 38px rgba(248, 252, 249, 0.52),
+    var(--shadow);
+}
+
+.hero .cta-btn:hover {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.48),
+    0 0 22px rgba(252, 253, 252, 0.95),
+    0 0 46px rgba(248, 252, 249, 0.58),
+    0 16px 28px rgba(78, 121, 101, 0.22);
 }
 
 .subtitle-sep {
