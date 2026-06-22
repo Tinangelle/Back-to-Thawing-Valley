@@ -3,6 +3,57 @@
 > 每条日志在中文段之后使用 `@en`、`@fr` 分别写英文与法文。同一篇内三种语言的结构保持一致。  
 > 更新后运行：`python tools/update_devlog.py`
 
+## **2026年六月**
+
+### **2026-06-21**
+
+#### **标题：文档体系搭建与 Godot 代码规范首版**
+
+* **内容**：
+  * **样本归纳**：以 farm_manager.gd、SeasonManager.gd、player.gd、hand.gd 四份核心脚本为样本，从命名、注释与结构归纳出项目首版 Godot 代码规范（docs/03_CodingStandard.md，456 行）；规范源自现有代码而非教科书，并标注尚未统一之处（如 farm_manager.gd vs SeasonManager.gd 文件名、Autoload 命名混用），便于渐进收敛而非强行大改。
+  * **命名与结构**：变量/函数 snake_case、类 PascalCase、常量 UPPER_SNAKE_CASE；私有函数 `_` 前缀（如 `_reset_fishing()`）；中文注释为主，常用【重要】【新增】【操作】标签；脚本按「导出变量 → 节点引用 → 生命周期 → 公开 API → 信号处理 → 私有辅助」排列。
+  * **交互约定**：Hand 检测后调用 hit() / interact()；全局管理器经 Autoload 协作。
+  * **文档体系**：新建分层 docs/ 目录——01_CoreDesign（核心设计，已完成）、02_Systems/（钓鱼/社交/共生已完成，EcologySystem 占位）、03_CodingStandard（本次生成）、04_DataSchema（占位，待定义 ItemData、LootTable、好感度等）。
+  * **核心设计**：Let the Whale Breach（蓝鲸岛）— 像素风 Steam 模拟经营，定位「数字心理避难所」；三大支柱为无条件接纳（社区极慢自转、玩家作催化剂）、自然导师（向动物学习、融入生态）、心理共鸣（深度对话 + 好感度锁、拒绝功利刷好感）；后崩坏 Solarpunk 世界观。
+  * **子系统文档**：钓鱼「闭眼禅意」— 抛竿→听声辨真假咬钩→0.7 秒收竿、D-S 级奖励池与 Pity Timer（hand.gd 状态机方向已对齐）；社交去功利化 — Karma Locks、水平亲密关系与 Soulbound/QPR、手账 UI 承载好感；共生系统目前最详 — 自然导师技能表、章鱼契约、蜜蜂全链路与世界事件。
+  * **代码对应**：设计非纸上谈兵——钓鱼 hand.gd + LootTable + fish_caught_payload；农耕 farm_manager.gd + plant.gd；季节 SeasonManager.gd；蜜蜂 log_hive.gd；社交 notebook.gd、NPC_Base.gd、Dialogue Manager 集成。
+* **相关文件**：
+  * docs/01_CoreDesign.md, docs/02_Systems/FishingSystem.md, docs/02_Systems/SocialSystem.md, docs/02_Systems/SymbiosisSystem.md, docs/03_CodingStandard.md
+  * farm_manager.gd, SeasonManager.gd, player.gd, hand.gd
+* **备注**：下一步 — 厘清 EcologySystem 与 Symbiosis 边界、撰写 04_DataSchema、钓鱼从「计时咬钩」迭代至「听觉辨真假」、按规范统一 Autoload 命名与信号回调风格。
+
+@en
+#### **Title: Documentation stack and first Godot coding standard**
+
+* **Content:**
+  * **Sample-driven standard:** Four core scripts—farm_manager.gd, SeasonManager.gd, player.gd, hand.gd—fed the project's first Godot coding guide (docs/03_CodingStandard.md, 456 lines). Rules are distilled from live code, not textbooks; known inconsistencies (e.g. farm_manager.gd vs SeasonManager.gd filenames, mixed Autoload naming) are flagged for gradual convergence—not a big-bang rewrite.
+  * **Naming & layout:** snake_case vars/functions, PascalCase classes, UPPER_SNAKE_CASE constants; private helpers prefixed with `_` (e.g. `_reset_fishing()`); Chinese comments with tags like 【重要】【新增】【操作】; script order: exports → node refs → lifecycle → public API → signal handlers → private helpers.
+  * **Interaction contract:** Hand detects, then calls hit() / interact(); global managers cooperate via Autoloads.
+  * **Docs tree:** Layered docs/—01_CoreDesign (done), 02_Systems/ (fishing/social/symbiosis done; EcologySystem stub), 03_CodingStandard (this pass), 04_DataSchema (stub for ItemData, LootTable, affinity, etc.).
+  * **Core design:** *Let the Whale Breach*—pixel sim on Steam as a "digital psychological refuge"; pillars: unconditional acceptance (slow self-running community, player as catalyst), nature mentor (learn from animals, join the ecology), emotional resonance (deep dialogue + affinity locks, no gift-grind). Post-collapse Solarpunk setting.
+  * **Subsystem specs:** Fishing "eyes-closed zen"—cast → audio tells real vs fake bite → 0.7s reel window, D–S loot tiers + pity timer (hand.gd state machine already aligned); social anti-grind—Karma Locks, horizontal intimacy / Soulbound / QPR, journal UI for affinity; symbiosis doc is richest—mentor skills, octopus pact, full bee chain, world events.
+  * **Code mapping:** Specs tie to prototypes—fishing hand.gd + LootTable + fish_caught_payload; farming farm_manager.gd + plant.gd; seasons SeasonManager.gd; bees log_hive.gd; social notebook.gd, NPC_Base.gd, Dialogue Manager.
+* **Related files:**
+  * docs/01_CoreDesign.md, docs/02_Systems/FishingSystem.md, docs/02_Systems/SocialSystem.md, docs/02_Systems/SymbiosisSystem.md, docs/03_CodingStandard.md
+  * farm_manager.gd, SeasonManager.gd, player.gd, hand.gd
+* **Note:** Next—clarify Ecology vs Symbiosis boundaries, draft 04_DataSchema, evolve fishing from timer bites to audio discrimination, unify Autoload names and signal callback style per the guide.
+
+@fr
+#### **Titre : Arborescence documentaire et première norme de code Godot**
+
+* **Contenu :**
+  * **Norme issue du code :** Quatre scripts cœur — farm_manager.gd, SeasonManager.gd, player.gd, hand.gd — ont nourri la première charte Godot du projet (docs/03_CodingStandard.md, 456 lignes). Règles extraites du code existant, pas d'un manuel ; écarts signalés (ex. farm_manager.gd vs SeasonManager.gd, nommage Autoload hétérogène) pour convergence progressive, sans refonte brutale.
+  * **Nommage et structure :** snake_case variables/fonctions, PascalCase classes, UPPER_SNAKE_CASE constantes ; privés préfixés `_` (ex. `_reset_fishing()`) ; commentaires surtout en chinois avec balises 【重要】【新增】【操作】 ; ordre script : exports → refs nœuds → cycle de vie → API publique → signaux → aides privées.
+  * **Interactions :** Hand détecte puis appelle hit() / interact() ; gestionnaires globaux via Autoloads.
+  * **Arborescence docs/ :** 01_CoreDesign (fait), 02_Systems/ (pêche/social/symbiose faits ; EcologySystem brouillon), 03_CodingStandard (cette passe), 04_DataSchema (brouillon ItemData, LootTable, affinité, etc.).
+  * **Design central :** *Let the Whale Breach* — sim pixel Steam, « refuge psychologique numérique » ; piliers : acceptation inconditionnelle (communauté qui tourne lentement seule, joueur catalyseur), mentor nature (apprendre des animaux, s'intégrer à l'écosystème), résonance émotionnelle (dialogues profonds + verrous d'affinité, pas de grind cadeaux). Solarpunk post-effondrement.
+  * **Sous-systèmes :** Pêche « zen les yeux fermés » — lancer → oreille pour vrai/faux mordu → fenêtre 0,7 s, butin D–S + pity (machine d'états hand.gd déjà alignée) ; social anti-utilitaire — Karma Locks, intimité horizontale / Soulbound / QPR, carnet pour l'affinité ; symbiose la plus détaillée — compétences mentor, pacte pieuvre, chaîne abeilles, événements monde.
+  * **Lien code :** Specs ancrées dans les prototypes — pêche hand.gd + LootTable + fish_caught_payload ; cultures farm_manager.gd + plant.gd ; saisons SeasonManager.gd ; abeilles log_hive.gd ; social notebook.gd, NPC_Base.gd, Dialogue Manager.
+* **Fichiers :**
+  * docs/01_CoreDesign.md, docs/02_Systems/FishingSystem.md, docs/02_Systems/SocialSystem.md, docs/02_Systems/SymbiosisSystem.md, docs/03_CodingStandard.md
+  * farm_manager.gd, SeasonManager.gd, player.gd, hand.gd
+* **Remarque :** Ensuite — frontière Ecology/Symbiosis, rédiger 04_DataSchema, faire évoluer la pêche du timer vers la discrimination audio, unifier noms Autoload et style de callbacks signaux selon la charte.
+
 ## **2025年九月**
 
 ### **2025-09-17**
